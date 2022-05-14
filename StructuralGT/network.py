@@ -3,7 +3,7 @@ import numpy as np
 import igraph as ig
 import os
 import cv2 as cv
-from StructuralGT import error, base, process_image, convert
+from StructuralGT import error, base, process_image#, convert
 import json
 import matplotlib.pyplot as plt
 from matplotlib.pyplot import figure
@@ -438,10 +438,10 @@ class Network():
         s.log['particles/'+attribute_name] = [np.NaN]*N
         
         #To store graph, must first convert sparse adjacency matrix as 3 dense matrices
-        rows, columns, values = convert.to_dense(np.array(self.Gr.get_adjacency(attribute=edge_weight).data,dtype=np.single))
-        s.log['Adj_rows'] = rows
-        s.log['Adj_cols'] = columns
-        s.log['Adj_values'] = values
+        #rows, columns, values = convert.to_dense(np.array(self.Gr.get_adjacency(attribute=edge_weight).data,dtype=np.single))
+        #s.log['Adj_rows'] = rows
+        #s.log['Adj_cols'] = columns
+        #s.log['Adj_values'] = values
         #s.log['img_options'] = self.options
         
         #Store optional Network attributes

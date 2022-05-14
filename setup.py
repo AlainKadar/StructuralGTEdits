@@ -61,7 +61,7 @@ setup(
         'gsd',
         'python-igraph'
     ],
-    ext_modules=[Extension("StructuralGT/convert",["StructuralGT/convert.c"])],
+    #ext_modules=[Extension("StructuralGT/convert",["StructuralGT/convert.c"])],
     zip_safe=False,
     package_dir={'StructuralGT':'StructuralGT'},
     package_data={'StructuralGT':['pytest/data/*/*']},

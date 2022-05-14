@@ -13,7 +13,7 @@ import matplotlib.cm as cm
 import csv
 
 from skimage.morphology import skeletonize, skeletonize_3d, binary_closing
-from StructuralGT import process_image, GetWeights_3d, error, network, convert
+from StructuralGT import process_image, GetWeights_3d, error, network#, convert
 
 #import convert
 
